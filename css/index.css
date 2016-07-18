@@ -62,38 +62,43 @@ section {
   color: black;
   min-width: 100%;
 	min-height: auto;
-  
+
 }
 
 .main {
  position: absolute
  top: 50%
  transform: translateY: (50%);
- 
+
  }
- 
+
  .b {
  //border: 1px solid green;
  }
-.main-container {
+/*.main-container {
     position: absolute;
     top: 50%;
     transform: translateY(-65%);
     //border: 1px solid white;
     //min-height: 100px;
     min-width: 100%;
-}
+}*/
 
 .portrait {
     border: 10px solid #90AFC5;
-    max-height: 250px;
+    max-height: 300px;
+	margin: 10px auto;
 }
 
-.vcenter {
+.test{
+	margin: 10px auto;
+}
+
+/*.vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
-}
+}*/
 
 .inline {
     display: inline;
@@ -119,7 +124,7 @@ section {
 #contact {
     background: white;
 	min-height: auto;
-    
+
 }
 
 footer {
@@ -178,9 +183,8 @@ section>a {
 	min-width: 100%;
 	min-height: 10px;
 	margin-bottom: 25px;
-	
+
 }
 .bottom{
 	padding-bottom: 25px;
 }
-
