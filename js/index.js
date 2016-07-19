@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 	var buildPortfolio = function(){
 
-	/*var portfolio = [	{"num": "1",
+	var portfolio = [	{"num": "1",
 	 "title": "Tribute Page Project",
 	 "address": "tribute.html",
 	 "codepen": "WxbGoB",
@@ -66,10 +66,10 @@ $(document).ready(function(){
 	 "date": "June 2016",
 	 "description": "The challenge was to build a site that uses the <a href='http://www..mediawiki.org/wiki/API:Main_page' target='_blank'>MediaWiki API</a> to fetch search results and display them. For this page, I've used jQuery and JSON/Ajax to request and receive JSONP from Wikipedia, then parse those results and build result boxes using jQuery. The page also features some basic CSS animation upon loading and to display additional search results. Another <a href='http://www.freecodecamp.com' target='_blank'>Free Code Camp</a> assignment.",
 	 "img": "wikipedia_project.png",
-	 "tags": ["HTML5/CSS3", "jQuery", "Ajax/JSON", "MediaWiki API"]}]*/
+	 "tags": ["HTML5/CSS3", "jQuery", "Ajax/JSON", "MediaWiki API"]}]
 
 
-	$.getJSON("portfolio/portfolio.json", function(portfolio){
+	//$.getJSON("portfolio/portfolio.json", function(portfolio){
 
 		for (i = 0; i < 3; i++) {
 		var html = ""
@@ -97,7 +97,7 @@ $(document).ready(function(){
 	} // end for loop
 	$("#portfolio").append("<!--<a href='#'><button type='button' class='btn btn-custom center-block'>See More ></button></a>-->");
 
-	});	//end getJSON
+	//});	//end getJSON
 
 
 	};  //end buildPortfolio()
