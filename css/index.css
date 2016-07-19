@@ -54,15 +54,6 @@ section {
     //border: 1px solid green;
 }
 
-/*.main-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-65%);
-    //border: 1px solid white;
-    //min-height: 100px;
-    min-width: 100%;
-}*/
-
 .portrait {
     border: 10px solid #90AFC5;
     max-height: 300px;
@@ -106,7 +97,7 @@ footer {
     color: ghostwhite;
     background: #90AFC5;
     text-align: center;
-    min-height: 50px;
+    min-height: 60px;
     vertical-align: middle;
 }
 .contact-header {
@@ -162,6 +153,24 @@ section>a {
 	padding: 5px;
 }
 
-.contact-bar-icon{
+.font-color-white{
 	color: ghostwhite;
+}
+
+.bkgrnd-clr-white{
+	background-color: ghostwhite !important;
+}
+
+#desktop-show {
+    display: none;
+}
+
+@media (min-width: 768px) {
+	.desktop-hide{
+		display: none;
+	}
+
+    #desktop-show{
+        display: inherit;
+    }
 }

@@ -1,21 +1,21 @@
 $(document).ready(function(){
-	
+
 	// Declare variables
 	var setMinSectHeight = function() {
 		console.log("inside setMinSectHeight()");
 		var windowHeight = $(window).height()
 		var topMargin = $('body').css("margin-top");
 		console.log(windowHeight, topMargin);
-		
+
 		$(".top-pane").css("min-height", windowHeight - 50);
 		console.log($(".top-pane").css("min-height"));
-		
+
 		//$("#contact").css("min-height", windowHeight - 50);
 		//console.log($("#contact").css("min-height"));
 	};
-	
+
 	var buildPortfolio = function(){
-		
+
 	/*var portfolio = [	{"num": "1",
 	 "title": "Tribute Page Project",
 	 "address": "tribute.html",
@@ -60,10 +60,10 @@ $(document).ready(function(){
 	 "description": "The challenge was to build a site that uses the <a href='http://www..mediawiki.org/wiki/API:Main_page' target='_blank'>MediaWiki API</a> to fetch search results and display them. For this page, I've used jQuery and JSON/Ajax to request and receive JSONP from Wikipedia, then parse those results and build result boxes using jQuery. The page also features some basic CSS animation upon loading and to display additional search results. Another <a href='http://www.freecodecamp.com' target='_blank'>Free Code Camp</a> assignment.",
 	 "img": "wikipedia_project.png",
 	 "tags": ["HTML5/CSS3", "jQuery", "Ajax/JSON", "MediaWiki API"]}]*/
-	
-	
+
+
 	$.getJSON("portfolio/portfolio.json", function(portfolio){
-		
+
 		for (i = 0; i < 3; i++) {
 		var html = ""
 		var x = portfolio[i];
@@ -73,29 +73,34 @@ $(document).ready(function(){
 					"<a href='portfolio/" + x.address + "'><img src='portfolio/img/" + x.img +"' class='img-responsive img-border'></a>" +
 				"</div>" +
 				"<div class='col-md-6 b vcenter'>" +
-					"<h2><a href='portfolio/" + x.address + "'>" + x.title + "</a>" + 
-					"<a href='http://www.codepen.io/dandrust/pen/" + x.codepen + "' target='_blank' alt='View Codepen'>&nbsp;" + 
+					"<h2><a href='portfolio/" + x.address + "'>" + x.title + "</a>" +
+					"<a href='http://www.codepen.io/dandrust/pen/" + x.codepen + "' target='_blank' alt='View Codepen'>&nbsp;" +
 					"<span class='fa fa-codepen fa-2x fa-fw'></span></a></h2>" +
 					"<p class='portfolio-desc-text'>" + x.description + "</p>" +
 					"<h4>";
 		x.tags.forEach(function(tag){
-			html += "<span class='label label-custom'>" + tag + "</span> "; 
+			html += "<span class='label label-custom'>" + tag + "</span> ";
 		});	// end x.tags.forEach()
-		
+
 		html += "</h4></div></div>";
 		console.log(html);
 		$("#portfolio").append(html);
-		
-		
-	} // end for loop 
+
+
+	} // end for loop
 	$("#portfolio").append("<!--<a href='#'><button type='button' class='btn btn-custom center-block'>See More ></button></a>-->");
-		
+
 	});	//end getJSON
-	
-	
+
+
 	};  //end buildPortfolio()
-	
+
+	//Click handlers
+	$(".nav>li").on("click",function(){
+		$('#nav-menu').collapse('toggle');
+	});
+
 	setMinSectHeight();
 	buildPortfolio();
-	
+
 });
