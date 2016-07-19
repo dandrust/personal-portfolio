@@ -64,7 +64,7 @@ section {
     position: absolute top: 50% transform: translateY: (50%);
 }
 .b {
-    //border: 1px solid green;
+    border: 1px solid green;
 }
 
 .portrait {
@@ -196,5 +196,13 @@ section>a {
     .head-text-align {
         text-align: left;
     }
+
+    .vcenter {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.head-row {
 
 }

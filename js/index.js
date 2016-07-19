@@ -3,12 +3,19 @@ $(document).ready(function(){
 	// Declare variables
 	var setMinSectHeight = function() {
 		console.log("inside setMinSectHeight()");
-		var windowHeight = $(window).height()
-		var topMargin = $('body').css("margin-top");
-		console.log(windowHeight, topMargin);
+		var headerHeight = $(window).height() - 50;
+		//var topMargin = $('body').css("margin-top");
+		//console.log(windowHeight, topMargin);
+		var headRowTopMargin = (headerHeight - $(".head-row").outerHeight(true))/2.5;
+		//;
+		console.log("top margin: " + headRowTopMargin);
 
-		$(".top-pane").css("min-height", windowHeight - 50);
+		$(".top-pane").css("min-height", headerHeight);
 		console.log($(".top-pane").css("min-height"));
+
+		$(".head-row").css("margin-top", headRowTopMargin);
+
+
 
 		//$("#contact").css("min-height", windowHeight - 50);
 		//console.log($("#contact").css("min-height"));
