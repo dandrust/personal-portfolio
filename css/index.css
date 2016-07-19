@@ -64,7 +64,7 @@ section {
     position: absolute top: 50% transform: translateY: (50%);
 }
 .b {
-    border: 1px solid green;
+    //border: 1px solid green;
 }
 
 .portrait {
@@ -75,7 +75,7 @@ section {
 }
 .test {
     margin: 0px auto;
-    margin-top: 20px;
+    //margin-top: 20px;
 }
 
 /*.vcenter {
