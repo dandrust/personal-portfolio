@@ -24,7 +24,7 @@ $(document).ready(function(){
 	var buildPortfolio = function(){
 
 	var portfolio = [	{"num": "1",
-	 "title": "Tribute Page Project",
+	 "title": "Tribute Page",
 	 "address": "tribute.html",
 	 "codepen": "WxbGoB",
 	 "date": "June 2016",
@@ -42,7 +42,7 @@ $(document).ready(function(){
 	 "tags": ["HTML5/CSS3", "Bootstrap 3"]},
 
  	{"num": "3",
- 	 "title": "Random Quote Machine Project",
+ 	 "title": "Random Quote Machine",
  	 "address": "quote.html",
  	 "codepen": "vKNXgm",
  	 "date": "June 2016",
@@ -75,18 +75,18 @@ $(document).ready(function(){
 		var html = ""
 		var x = portfolio[i];
 		console.log(x.num);
-		html += "<div class='row project-container b'>" +
-				"<div class='col-md-6 b vcenter'>" +
-					"<a href='portfolio/" + x.address + "'><img src='portfolio/img/" + x.img +"' class='img-responsive img-border'></a>" +
-				"</div>" +
-				"<div class='col-md-6 b vcenter'>" +
-					"<h2><a href='portfolio/" + x.address + "'>" + x.title + "</a>" +
-					"<a href='http://www.codepen.io/dandrust/pen/" + x.codepen + "' target='_blank' alt='View Codepen'>&nbsp;" +
-					"<span class='fa fa-codepen fa-2x fa-fw'></span></a></h2>" +
-					"<p class='portfolio-desc-text'>" + x.description + "</p>" +
-					"<h4>";
+		html += "<div class='row vcenter project-container b'>" +
+					"<div class='col-sm-6 b '>" +
+						"<a href='portfolio/" + x.address + "'><img src='portfolio/img/" + x.img +"' class='img-responsive img-border portfolio-img'></a>" +
+					"</div>" +
+					"<div class='col-sm-6 b'>" +
+						"<p class='title project-title text-center'><a href='portfolio/" + x.address + "'>" + x.title + "</a>" +
+						"</p>" +
+						"<p class='portfolio-desc-text'>" + x.description + "<span>&nbsp;</span>" +
+						"<a href='https://www.github.com/dandrust/' target='_blank'>View GitHub repo <span class='fa fa-angle-double-right'></span></a></p>" +
+						"<h4>";
 		x.tags.forEach(function(tag){
-			html += "<span class='label label-custom'>" + tag + "</span> ";
+				html += "<span class='label label-custom'>" + tag + "</span> ";
 		});	// end x.tags.forEach()
 
 		html += "</h4></div></div>";
