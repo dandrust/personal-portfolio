@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var setMinSectHeight = function() {
 		var headerHeight = $(window).height() - 50;
 		var headRowTopMargin = (headerHeight - $(".head-row").outerHeight(true))/2.5;
-		var contactHeight = $(window).height() - (50 + 60);
+		var contactHeight = $(window).height() - (50 + 60 - 10);
 		var contactContentHeight = $("#contact-content").outerHeight(true);
 
 		// Set height of top pane and vertically center header row
