@@ -5,7 +5,7 @@ body {
     font-size: 55px;
     font-weight: 300;
     letter-spacing: 3px;
-    margin: 10px 0px;
+    //margin: 10px auto;
 }
 .title>a {
     color: inherit;
@@ -25,6 +25,7 @@ p>a {
     font-size: 35px;
     font-weight: 500;
     letter-spacing: 1px;
+    //margin: 0px auto;
 }
 h2 {
     //font-weight: bold;
@@ -51,7 +52,7 @@ p {
 .top-pane {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 1500px;
     background: rgba(0, 0, 0, 0.5);
     color: ghostwhite;
     z-index: 1;
@@ -147,7 +148,7 @@ section>a {
 }
 .img-border {
     padding: 0;
-    border: 4px solid #90AFC5;
+    border: 2px solid #90AFC5;
     border-radius: 4px;
     box-shadow: 5px 5px 5px #777;
 }
@@ -199,16 +200,18 @@ section>a {
 .head-row {}
 .portfolio-img {
     //max-width: 300px;
-    border: 4px solid black;
+    border: 3px solid black;
     margin: 0px auto;
 }
-
-.contact-title{
-	font-size: 35px;
+.contact-title {
+    font-size: 35px;
 }
-
-.nav-assist{
-    position:absolute;
-    bottom:0px;
+.nav-assist {
+    position: absolute;
+    bottom: 0px;
     height: 40px;
+}
+.bottom-margin {
+    margin-bottom: 10px;
+    text-align: center;
 }
