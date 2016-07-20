@@ -3,11 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Dan Drust</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/3b358e4eff.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/index.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 </head>
 
 <body>
@@ -38,8 +47,6 @@
 		</div>
 	</div>
 
-	<img src="img/IMG_2987.jpg" class="main-img"></img>
-
 	<nav class="navbar navbar-default bg-accent navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -57,17 +64,16 @@
 					<li><a href="#portfolio" class="font-white">Portfolio</a></li>
 					<li><a href="#" class="font-white">About</a></li>
 					<li><a href="#contact" class="font-white">Contact</a></li>
-					<li id="desktop-show"><a href="https://www.linkedin.com/in/dandrust" target="_blank"><span class="font-color-white  fa fa-linkedin-square "></span></a></li>
-					<li id="desktop-show"><a href="https://github.com/dandrust" target="_blank"><span class="font-color-white  fa fa-github-square "></span></a></li>
-					<!--<li id="desktop-show"><a href="dan-drust-resume.pdf" target="_blank"><span class=" fa-stack ">
-						<i class="font-color-white fa fa-square "></i>
-						<i class="font-accent fa fa-file-pdf-o  "></i>
-					</span></a></li>-->
+					<li class="desktop-show"><a href="https://www.linkedin.com/in/dandrust" target="_blank"><span class="font-color-white  fa fa-linkedin-square "></span></a></li>
+					<li class="desktop-show"><a href="https://github.com/dandrust" target="_blank"><span class="font-color-white  fa fa-github-square "></span></a></li>
+
 
 				</ul>
 			</div>
 		</div>
 	</nav>
+
+	<img src="img/IMG_2987.jpg" class="main-img"></img>
 
 	<header class="top-pane">
 		<div class="container-fluid">
@@ -100,7 +106,9 @@
 		<div class='container-fluid'>
 			<div class='row'>
 				<div class='col-sm-3 col-sm-offset-3 bottom-margin b'>
-					<button type='button' class='btn btn-custom '>View complete portfolio&nbsp;<span class='fa fa-angle-double-right'></span></button>
+					<a href='portfolio.html'>
+						<button type='button' class='btn btn-custom '>View complete portfolio&nbsp;<span class='fa fa-angle-double-right'></span></button>
+					</a>
 				</div>
 				<div class='col-sm-3 bottom-margin b'>
 					<button type='button' class='btn btn-custom '>Explore Dan's skillset&nbsp;<span class='fa fa-angle-double-right'></span></button>
@@ -116,8 +124,10 @@
 		<div class="container b" id="contact-content">
 			<div class="row b">
 				<div class="col-sm-6 col-sm-offset-3 b ">
-					<p class="title contact-title text-center">Want to start a conversation?</h3>
-						<p>If my work interests you, please contact me and let me know how we can work together.</p>
+					<p class="title contact-title text-center">Want to start a conversation?</p>
+						<!--<p>If my work interests you, please contact me and let me know how we can work together.</p>-->
+
+						<br />
 						<br />
 						<form>
 							<div class="form-group">
@@ -146,9 +156,7 @@
 
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/index.js"></script>
+
 
 </body>
 

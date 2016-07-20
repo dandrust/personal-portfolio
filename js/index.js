@@ -121,12 +121,14 @@ $(document).ready(function() {
 
     }; //end buildPortfolio()
 
+
     //Click handlers
     $(".nav>li").on("click", function() {
         $('#nav-menu').collapse('toggle');
     });
 
-    setMinSectHeight();
+	setMinSectHeight();
     buildPortfolio();
+
 
 });
