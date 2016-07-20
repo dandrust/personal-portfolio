@@ -22,11 +22,21 @@ $(document).ready(function() {
         //console.log($("#contact").css("min-height"));
     };
 
+	var transformImage = function(){
+		if ($(window).width()>767) {
+			var imageHeight = $('.header-portrait').outerHeight(true);
+			console.log(imageHeight);
+			$('.header-transform').css({transform:'translateY(-'+((imageHeight/2)+5)+'px)'});
+			$('section').css({transform:'translateY(-'+imageHeight+'px)'})
+		}
+
+	}
+
     var buildPortfolio = function() {
 
         var portfolio = [{
                 "num": "5",
-                "title": "Wikipedia Searcher",
+                "title": "Wikipedia Search",
                 "address": "wikipedia-viewer",
                 "date": "June 2016",
                 "description": "The challenge was to build a site that uses the <a href='http://www.mediawiki.org/wiki/API:Main_page' target='_blank'>MediaWiki API</a> to fetch search results and display them. For this page, I've used jQuery and JSON/Ajax to request and receive JSONP from Wikipedia, then parse those results and build result boxes using jQuery. The page also features some basic CSS animation upon loading and to display additional search results. Another <a href='http://www.freecodecamp.com' target='_blank'>Free Code Camp</a> assignment.",
@@ -128,6 +138,7 @@ $(document).ready(function() {
     });
 
 	setMinSectHeight();
+	transformImage();
     buildPortfolio();
 
 
