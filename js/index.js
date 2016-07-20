@@ -27,7 +27,10 @@ $(document).ready(function() {
 			var imageHeight = $('.header-portrait').outerHeight(true);
 			console.log(imageHeight);
 			$('.header-transform').css({transform:'translateY(-'+((imageHeight/2)+5)+'px)'});
-			$('section').css({transform:'translateY(-'+imageHeight+'px)'})
+			$('section').css({transform:'translateY(-'+imageHeight+'px)'});
+			$('section').css("padding-top","+=" + (imageHeight/4) + "px");
+			$('.header').css("padding-bottom", "+=" + (imageHeight/4) + "px");
+
 		}
 
 	}
